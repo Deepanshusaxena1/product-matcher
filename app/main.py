@@ -34,7 +34,10 @@ if TYPE_CHECKING:
 STATIC_DIR = Path(__file__).resolve().parent.parent / "static"
 
 
-def build_live_comparer(fetcher: PageFetcher, settings: Settings) -> LiveProductComparer:
+def build_live_comparer(
+    fetcher: PageFetcher, settings: Settings, *, flipkart_fetcher: PageFetcher | None = None
+) -> LiveProductComparer:
+    """`flipkart_fetcher`, when given, fetches Flipkart's pages; `fetcher` fetches everything else."""
     croma_key = InventoryKey(fetcher, configured=settings.croma_inventory_key)
     products: TtlCache[Listing] = TtlCache(max_entries=settings.cache_max_entries)
     results: TtlCache[PlatformResult] = TtlCache(max_entries=settings.cache_max_entries)
@@ -46,12 +49,23 @@ def build_live_comparer(fetcher: PageFetcher, settings: Settings) -> LiveProduct
             key=lambda url: parse_amazon_link(url).fetch_url,  # one entry however the link was pasted
         ),
         adapters=[
-            FlipkartAdapter(fetcher),
+            FlipkartAdapter(flipkart_fetcher or fetcher),
             CromaAdapter(fetcher, pincode=settings.croma_pincode, key=croma_key),
             MyntraAdapter(fetcher),
         ],
         finder=CachedFinder(Matcher(), results, ttl_seconds=settings.result_cache_ttl_s),
         platform_timeout_s=settings.platform_timeout_s,
+    )
+
+
+def _flipkart_fetcher(settings: Settings) -> CurlPageFetcher | None:
+    """A fetcher that reaches Flipkart through the configured proxy, or None to fetch it directly."""
+    if settings.flipkart_proxy_url is None:
+        return None
+    return CurlPageFetcher.impersonating_chrome(
+        proxy=settings.flipkart_proxy_url.get_secret_value(),
+        verify=settings.flipkart_proxy_ca_path or False,
+        timeout_s=settings.flipkart_proxy_timeout_s,
     )
 
 
@@ -66,11 +80,14 @@ def create_app(comparer: ProductComparer | None = None, settings: Settings | Non
             return
         # The HTTP session belongs to the running event loop, so it is opened here rather than at import.
         fetcher = CurlPageFetcher.impersonating_chrome(timeout_s=settings.fetch_timeout_s)
-        app.state.comparer = build_live_comparer(fetcher, settings)
+        flipkart_fetcher = _flipkart_fetcher(settings)
+        app.state.comparer = build_live_comparer(fetcher, settings, flipkart_fetcher=flipkart_fetcher)
         try:
             yield
         finally:
             await fetcher.aclose()
+            if flipkart_fetcher is not None:
+                await flipkart_fetcher.aclose()
 
     app = FastAPI(
         title="Product Matcher",

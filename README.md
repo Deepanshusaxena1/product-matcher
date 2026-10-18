@@ -67,10 +67,11 @@ uv run mypy
 
 ## Deploy
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Deepanshusaxena1/product-matcher/tree/main)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Deepanshusaxena1/product-matcher)
 
-The button deploys to DigitalOcean App Platform in Bangalore, as described by `.do/deploy.template.yaml`. The
-full guide, covering Docker, App Platform and a DigitalOcean Droplet, is
+The button creates the service described by `render.yaml` on Render (Singapore). Flipkart refuses servers
+outside India, so its requests go through a proxy set in `MATCHER_FLIPKART_PROXY_URL`, such as Bright Data's
+Web Unlocker. The full guide, covering Docker, Render and the Flipkart proxy, is
 [deployment_documentation.md](deployment_documentation.md).
 
 The `Dockerfile` builds one image that serves the API and the page on `$PORT` (default 8000):
@@ -81,11 +82,6 @@ docker compose up --build        # builds the image and serves http://localhost:
 docker build -t product-matcher .
 docker run -p 8000:8000 product-matcher
 ```
-
-On Render, create a Blueprint from this repository: `render.yaml` describes the service (Singapore region,
-health check on `/api/health`). Any `MATCHER_*` setting can be added as an environment variable. The shops
-may treat a data-centre address more warily than a home connection; when one refuses, its card says
-"Couldn't check" rather than guessing.
 
 ## Layout
 

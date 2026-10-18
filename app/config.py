@@ -1,6 +1,6 @@
 """Settings, read from environment variables prefixed `MATCHER_` (or a `.env` file)."""
 
-from pydantic import Field
+from pydantic import Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -15,3 +15,8 @@ class Settings(BaseSettings):
     product_cache_ttl_s: float = 24 * 60 * 60  # an Amazon product's details rarely change within a day
     result_cache_ttl_s: float = 30 * 60  # a shop's answer, including stock, is reused for half an hour
     cache_max_entries: int = 1000
+    # Flipkart refuses servers outside India. With a proxy set (e.g. Bright Data's Web Unlocker, targeted to
+    # India), Flipkart's requests, and only Flipkart's, go through it.
+    flipkart_proxy_url: SecretStr | None = None
+    flipkart_proxy_ca_path: str | None = None  # the proxy's CA certificate; unset, the proxy isn't verified
+    flipkart_proxy_timeout_s: float = 30.0  # such proxies retry for us, so one request can take longer

@@ -59,9 +59,16 @@ class CurlPageFetcher:
         )
 
     @classmethod
-    def impersonating_chrome(cls, **options: Any) -> CurlPageFetcher:
+    def impersonating_chrome(
+        cls, *, proxy: str | None = None, verify: bool | str = True, **options: Any
+    ) -> CurlPageFetcher:
+        """`verify` is False or a CA file for proxies that re-sign the pages they fetch."""
+        # curl_cffi types `verify` as a bool, but a string is read as a CA file (curl's CAINFO).
+        session: AsyncSession[Any] = AsyncSession(
+            impersonate="chrome", proxy=proxy, verify=cast("bool", verify)
+        )
         # curl_cffi types `method` as a Literal; the fetcher only ever passes "GET" and "POST".
-        return cls(cast("HttpSession", AsyncSession(impersonate="chrome")), **options)
+        return cls(cast("HttpSession", session), **options)
 
     async def aclose(self) -> None:
         await self._session.close()
