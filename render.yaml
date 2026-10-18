@@ -1,7 +1,7 @@
 # Render blueprint: New > Blueprint, point it at this repository. Singapore is the region closest to the
-# Indian shops. Flipkart refuses servers outside India, so its requests go through the proxy set in
-# MATCHER_FLIPKART_PROXY_URL (see deployment_documentation.md); without one, Flipkart's card says
-# "Couldn't check" and the other shops still answer.
+# Indian shops. Flipkart and Myntra turn away servers outside India, so their requests go through the proxy
+# set in MATCHER_PROXY_URL (see deployment_documentation.md); without one, their cards say "Couldn't check"
+# and the other shops still answer.
 services:
   - type: web
     name: product-matcher
@@ -12,5 +12,5 @@ services:
     envVars:
       - key: MATCHER_CROMA_PINCODE
         value: "400001"
-      - key: MATCHER_FLIPKART_PROXY_URL
+      - key: MATCHER_PROXY_URL
         sync: false # a secret: Render asks for it when the blueprint is created

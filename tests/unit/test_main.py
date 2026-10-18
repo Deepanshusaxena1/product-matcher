@@ -8,45 +8,91 @@ from app.domain.ports import FetchedPage
 from app.main import build_live_comparer
 from support.fakes import FakeFetcher
 
-PRODUCT_URL = "https://www.amazon.in/dp/B0DHL7YT5S"
-PHONE_HTML = (
-    Path(__file__).resolve().parents[1] / "fixtures" / "amazon" / "phone_samsung_s24fe.html"
-).read_text(encoding="utf-8")
+AMAZON = Path(__file__).resolve().parents[1] / "fixtures" / "amazon"
+PHONE_URL = "https://www.amazon.in/dp/B0DHL7YT5S"
+POLO_URL = "https://www.amazon.in/dp/B0DDTHBCJP"
 
 
-async def test_flipkart_alone_is_fetched_through_its_own_fetcher_when_one_is_given() -> None:
+def _amazon(url: str, fixture: str) -> FakeFetcher:
+    """A fetcher that knows only this Amazon page, so every shop it is asked for fails."""
+    html = (AMAZON / fixture).read_text(encoding="utf-8")
+    return FakeFetcher({url: FetchedPage(status_code=200, url=url, text=html)})
+
+
+def _hosts(fetcher: FakeFetcher) -> set[str]:
+    return {key.split("/")[2] for key, _ in fetcher.requests}
+
+
+async def test_by_default_flipkart_and_myntra_go_through_the_proxy_and_the_rest_go_direct() -> None:
     # Neither fetcher knows any shop page, so every shop fails; what matters is who was asked.
-    shared = FakeFetcher({PRODUCT_URL: FetchedPage(status_code=200, url=PRODUCT_URL, text=PHONE_HTML)})
-    flipkart_only = FakeFetcher({})
+    direct = _amazon(POLO_URL, "polo_puma_687093.html")
+    proxied = FakeFetcher({})
 
-    report = await build_live_comparer(shared, Settings(), flipkart_fetcher=flipkart_only).compare(
-        PRODUCT_URL
-    )
+    report = await build_live_comparer(direct, Settings(), proxied_fetcher=proxied).compare(POLO_URL)
+
+    assert all(result.status is MatchStatus.ERROR for result in report.results)
+    assert _hosts(proxied) == {"www.flipkart.com", "www.myntra.com"}
+    assert _hosts(direct) & {"www.flipkart.com", "www.myntra.com"} == set()
+
+
+async def test_the_proxied_shops_can_be_chosen() -> None:
+    direct = _amazon(PHONE_URL, "phone_samsung_s24fe.html")
+    proxied = FakeFetcher({})
+    settings = Settings(proxied_shops=(Platform.CROMA,))
+
+    await build_live_comparer(direct, settings, proxied_fetcher=proxied).compare(PHONE_URL)
+
+    assert _hosts(proxied)
+    assert all("croma.com" in host for host in _hosts(proxied))
+    assert "www.flipkart.com" in _hosts(direct)
+
+
+async def test_without_a_proxy_every_shop_goes_direct() -> None:
+    direct = _amazon(PHONE_URL, "phone_samsung_s24fe.html")
+
+    report = await build_live_comparer(direct, Settings()).compare(PHONE_URL)
 
     assert {result.platform for result in report.results} == {Platform.FLIPKART, Platform.CROMA}
-    assert all(result.status is MatchStatus.ERROR for result in report.results)
-    assert flipkart_only.requests
-    assert all("flipkart.com" in key for key, _ in flipkart_only.requests)
-    assert not any("flipkart.com" in key for key, _ in shared.requests)
+    assert "www.flipkart.com" in _hosts(direct)
 
 
-def test_the_flipkart_proxy_address_is_kept_secret(monkeypatch: pytest.MonkeyPatch) -> None:
-    monkeypatch.setenv("MATCHER_FLIPKART_PROXY_URL", "http://user:hunter2@proxy.test:44445")
+def test_the_proxied_shops_are_read_from_a_comma_separated_list(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("MATCHER_PROXIED_SHOPS", "Flipkart, croma")
+
+    assert Settings().proxied_shops == (Platform.FLIPKART, Platform.CROMA)
+
+
+@pytest.mark.parametrize("name", ["MATCHER_PROXY_URL", "MATCHER_FLIPKART_PROXY_URL"])
+def test_the_proxy_address_is_read_under_either_name_and_kept_secret(
+    monkeypatch: pytest.MonkeyPatch, name: str
+) -> None:
+    monkeypatch.setenv(name, "http://user:hunter2@proxy.test:44445")
 
     settings = Settings()
 
-    assert settings.flipkart_proxy_url is not None
-    assert settings.flipkart_proxy_url.get_secret_value() == "http://user:hunter2@proxy.test:44445"
+    assert settings.proxy_url is not None
+    assert settings.proxy_url.get_secret_value() == "http://user:hunter2@proxy.test:44445"
     assert "hunter2" not in repr(settings)
 
 
-def test_live_mode_starts_with_a_flipkart_proxy() -> None:
+def test_an_empty_proxy_address_does_not_hide_the_older_name(monkeypatch: pytest.MonkeyPatch) -> None:
+    # A host may create the new variable empty while the working address still sits under the old name.
+    monkeypatch.setenv("MATCHER_PROXY_URL", "")
+    monkeypatch.setenv("MATCHER_FLIPKART_PROXY_URL", "http://user:secret@proxy.test:44445")
+
+    settings = Settings()
+
+    assert settings.proxy_url is not None
+    assert settings.proxy_url.get_secret_value() == "http://user:secret@proxy.test:44445"
+
+
+def test_live_mode_starts_with_a_proxy() -> None:
     from fastapi.testclient import TestClient
 
     from app.main import create_app
     from app.services.comparer import LiveProductComparer
 
-    settings = Settings(demo=False, flipkart_proxy_url="http://user:secret@proxy.test:44445")  # type: ignore[arg-type]
+    settings = Settings(demo=False, proxy_url="http://user:secret@proxy.test:44445")  # type: ignore[arg-type]
     app = create_app(settings=settings)
     with TestClient(app):  # runs startup and shutdown, opening and closing both HTTP sessions
         assert isinstance(app.state.comparer, LiveProductComparer)

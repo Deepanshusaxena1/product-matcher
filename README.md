@@ -69,9 +69,9 @@ uv run mypy
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Deepanshusaxena1/product-matcher)
 
-The button creates the service described by `render.yaml` on Render (Singapore). Flipkart refuses servers
-outside India, so its requests go through a proxy set in `MATCHER_FLIPKART_PROXY_URL`, such as Bright Data's
-Web Unlocker. The full guide, covering Docker, Render and the Flipkart proxy, is
+The button creates the service described by `render.yaml` on Render (Singapore). Flipkart and Myntra turn away
+servers outside India, so their requests go through a proxy in India set in `MATCHER_PROXY_URL`, such as
+ZenRows. The full guide, covering Docker, Render and the proxy, is
 [deployment_documentation.md](deployment_documentation.md).
 
 The `Dockerfile` builds one image that serves the API and the page on `$PORT` (default 8000):
