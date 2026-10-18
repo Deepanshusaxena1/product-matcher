@@ -1,0 +1,293 @@
+{
+  "about": "Amazon.in products with the answer each shop should give, checked by hand against the shops' own sites. 'found' means in stock or out of stock: stock changes daily, the identity of the product does not.",
+  "checked_on": "2026-10-18",
+  "products": [
+    {
+      "asin": "B0DHL7YT5S",
+      "product": "Samsung Galaxy S24 FE, Graphite, 8/128",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Croma sells the S24, S24+, S24 Ultra and S23 FE, not the S24 FE"
+    },
+    {
+      "asin": "B0FDL5T1PF",
+      "product": "Samsung Galaxy Z Fold7, Silver Shadow, 12/256",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Same model and variant on both"
+    },
+    {
+      "asin": "B0CS69QQTG",
+      "product": "Samsung Galaxy S24, Onyx Black, 8/256",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Same model and variant on both"
+    },
+    {
+      "asin": "B0CHX1W1XY",
+      "product": "Apple iPhone 15, Black, 128 GB",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Model number MTP03HN/A on both"
+    },
+    {
+      "asin": "B0HJB7MQ97",
+      "product": "Apple iPhone 18 Pro, Black, 256 GB",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Model number MJRP4HN/A on both; Amazon's page has no category trail, only 'Generic Name: iPhone'"
+    },
+    {
+      "asin": "B0GVYXPZBS",
+      "product": "OnePlus Nord CE6 Lite, Hyper Black, 8/128",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Same model and variant on both"
+    },
+    {
+      "asin": "B0HJ1YVT1V",
+      "product": "Samsung Galaxy A36 5G, Dark Blue, 8/128",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Same model and variant; Croma's listing may be another colour, which phones allow"
+    },
+    {
+      "asin": "B0G2B251KD",
+      "product": "Redmi 15C 5G Prime Edition, 6/128",
+      "expect": {
+        "flipkart": [
+          "not_listed"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Prime Edition phones are Amazon's own editions; Flipkart has the plain 15C 5G, Croma the 15A"
+    },
+    {
+      "asin": "B0GTZ9TSDJ",
+      "product": "LG 43-inch NU87 TV, 43NU870BPLA",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "found"
+        ]
+      },
+      "why": "Model number 43NU870BPLA on both"
+    },
+    {
+      "asin": "B0983NTYZ5",
+      "product": "Nike Court Vision Lo NN, white, men's, DH2987-100",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart shows DH2987-100; Myntra's 'Court Vision Low' never names the Next Nature edition"
+    },
+    {
+      "asin": "B0BSLKJPXV",
+      "product": "Puma Smashic, White-Matte Silver, 39437102",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart shows style code 39437102; Myntra's 'Smashic Comfort' can't be confirmed without one"
+    },
+    {
+      "asin": "B09VSZNT7Z",
+      "product": "adidas Grand Court Base 2.0, white, men's, GW9250",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "myntra": [
+          "found",
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart shows GW9250; Myntra lists the model in white with no style code, so either answer is defensible"
+    },
+    {
+      "asin": "B0DSFRSPRK",
+      "product": "adidas Streeet Icon Lite M, JK2072",
+      "expect": {
+        "flipkart": [
+          "not_listed"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart's Streeet Icon Lite M is JK8211, another colourway; Myntra doesn't stock the model"
+    },
+    {
+      "asin": "B0DDTHBCJP",
+      "product": "Puma Essential polo, black, men's, 68709301",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart shows 68709301; a T-shirt is never confirmed by name, and Myntra shows no style codes"
+    },
+    {
+      "asin": "B0FDBB2VRC",
+      "product": "Samsung Galaxy M36 5G, Velvet Black, 6/128",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart sells the M36; Croma's nearest is the M56"
+    },
+    {
+      "asin": "B0G81P4MPG",
+      "product": "Samsung Galaxy M17 5G, Sapphire Black, 6/128",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart sells the M17; Croma's nearest is the A17"
+    },
+    {
+      "asin": "B0GXB76VRW",
+      "product": "Samsung 43-inch Crystal UHD TV, UA43UE86AHULXL",
+      "expect": {
+        "flipkart": [
+          "not_listed"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Neither shop lists UA43UE86AHULXL; both have other 43-inch Samsung models"
+    },
+    {
+      "asin": "B0GY3JRP3X",
+      "product": "Sony BRAVIA 3 II 55-inch, K-55XR30M2",
+      "expect": {
+        "flipkart": [
+          "not_listed"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart has the older K-55S30B; Croma's BRAVIA 3 II 55 is K-55XR35M2, a different model number"
+    },
+    {
+      "asin": "B0F6ZLFNVT",
+      "product": "Xiaomi X 43-inch TV, L43MB-AIN",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "croma": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart shows L43MB-AIN; Croma's X Series 43 carries model number ELA6012IN, which can't be tied to it (possibly the same TV)"
+    },
+    {
+      "asin": "B098F6QPLK",
+      "product": "Nike Court Vision Lo NN, DH2987-101",
+      "expect": {
+        "flipkart": [
+          "found"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart shows DH2987-101; Myntra never names the Next Nature edition"
+    },
+    {
+      "asin": "B0FRNKMJTY",
+      "product": "Nike Court Vision Lo P NB",
+      "expect": {
+        "flipkart": [
+          "not_listed"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Both shops list only the plain Court Vision Low, which can't be confirmed as this edition"
+    },
+    {
+      "asin": "B0FD41PKQX",
+      "product": "Puma Court Curves, 40608802",
+      "expect": {
+        "flipkart": [
+          "not_listed"
+        ],
+        "myntra": [
+          "not_listed"
+        ]
+      },
+      "why": "Flipkart's only Court Curves is 40608808, another colourway; Myntra doesn't list the model"
+    }
+  ]
+}

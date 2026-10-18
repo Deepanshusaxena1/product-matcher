@@ -1,0 +1,12 @@
+# Render blueprint: New > Blueprint, point it at this repository. Singapore is the region closest to the
+# Indian shops; their sites may still treat a data-centre address more warily than a home connection.
+services:
+  - type: web
+    name: product-matcher
+    runtime: docker
+    region: singapore
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: MATCHER_CROMA_PINCODE
+        value: "400001"

@@ -1,0 +1,404 @@
+[
+  {
+    "source": {
+      "platform": "amazon",
+      "listing_id": "B0FDL5T1PF",
+      "url": "https://www.amazon.in/dp/B0FDL5T1PF",
+      "title": "Samsung Galaxy Z Fold7 5G Mobile with Galaxy AI (Silver Shadow, 12GB RAM, 256GB Storage), Ultra Sleek Design with 200MP Camera, Ultra-Smooth Gaming with Powerful Snapdragon 8 Elite, Google Gemini",
+      "fingerprint": {
+        "category": "smartphone",
+        "brand": "samsung",
+        "model": "galaxy z fold7",
+        "ram_gb": 12,
+        "storage_gb": 256,
+        "colour": "Silver Shadow",
+        "colour_families": [
+          "silver"
+        ]
+      },
+      "availability": "in_stock",
+      "price_inr": 134999.0,
+      "image_url": "https://m.media-amazon.com/images/I/61x2YvxqdGL._SL1500_.jpg"
+    },
+    "results": [
+      {
+        "platform": "flipkart",
+        "status": "in_stock",
+        "reason": "Same model (Samsung Galaxy Z Fold7), 12 GB RAM and 256 GB storage.",
+        "listing": {
+          "platform": "flipkart",
+          "listing_id": "MOBHD92UDC8B9TGX",
+          "url": "https://www.flipkart.com/samsung-galaxy-z-fold7-5g-silver-shadow-256-gb/p/itm80780506616fb?pid=MOBHD92UDC8B9TGX",
+          "title": "Samsung Galaxy Z Fold7 5G (Silver Shadow, 256 GB)",
+          "fingerprint": {
+            "category": "smartphone",
+            "brand": "samsung",
+            "model": "galaxy z fold7",
+            "model_number": "SM-F966BZSDINS",
+            "ram_gb": 12,
+            "storage_gb": 256,
+            "colour": "Silver Shadow",
+            "colour_families": [
+              "silver"
+            ]
+          },
+          "availability": "in_stock",
+          "price_inr": 163800.0,
+          "image_url": "https://rukmini1.flixcart.com/image/416/416/xif0q/mobile/2/f/7/-resized-original-imahgfnytht5rghh.jpeg?q=70"
+        },
+        "confidence": 0.85
+      },
+      {
+        "platform": "croma",
+        "status": "in_stock",
+        "reason": "Same model (Samsung Galaxy Z Fold7), 12 GB RAM and 256 GB storage.",
+        "listing": {
+          "platform": "croma",
+          "listing_id": "316850",
+          "url": "https://www.croma.com/samsung-galaxy-z-fold7-5g-12gb-ram-256gb-silver-shadow-/p/316850",
+          "title": "SAMSUNG Galaxy Z Fold7 5G (12GB RAM, 256GB, Silver Shadow)",
+          "fingerprint": {
+            "category": "smartphone",
+            "brand": "samsung",
+            "model": "galaxy z fold7",
+            "model_number": "SM-F966BZSDINS",
+            "ram_gb": 12,
+            "storage_gb": 256,
+            "colour": "Silver Shadow",
+            "colour_families": [
+              "silver"
+            ]
+          },
+          "availability": "in_stock",
+          "price_inr": 174999.0,
+          "image_url": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/316850_0_zuauil.png"
+        },
+        "confidence": 0.85,
+        "notes": [
+          "Croma's stock is for delivery to pincode 400001."
+        ]
+      }
+    ]
+  },
+  {
+    "source": {
+      "platform": "amazon",
+      "listing_id": "B0DHL7YT5S",
+      "url": "https://www.amazon.in/dp/B0DHL7YT5S",
+      "title": "Samsung Galaxy S24 FE 5G AI Smartphone (Graphite, 8GB RAM, 128GB Storage)",
+      "fingerprint": {
+        "category": "smartphone",
+        "brand": "samsung",
+        "model": "galaxy s24 fe",
+        "ram_gb": 8,
+        "storage_gb": 128,
+        "colour": "Graphite",
+        "colour_families": [
+          "grey"
+        ]
+      },
+      "availability": "in_stock",
+      "price_inr": 39999,
+      "image_url": "https://m.media-amazon.com/images/I/71eUNTW+nJL._SL1500_.jpg"
+    },
+    "results": [
+      {
+        "platform": "flipkart",
+        "status": "in_stock",
+        "reason": "Same model (Galaxy S24 FE) with 8 GB RAM and 128 GB storage.",
+        "confidence": 0.92,
+        "listing": {
+          "platform": "flipkart",
+          "listing_id": "MOBH4ZG33EBNZKS7",
+          "url": "https://www.flipkart.com/samsung-galaxy-s24-fe-5g-graphite-128-gb/p/itme960199e26f23?pid=MOBH4ZG33EBNZKS7",
+          "title": "Samsung Galaxy S24 FE 5G (Graphite, 128 GB)",
+          "fingerprint": {
+            "category": "smartphone",
+            "brand": "samsung",
+            "model": "galaxy s24 fe",
+            "ram_gb": 8,
+            "storage_gb": 128,
+            "colour": "Graphite",
+            "colour_families": [
+              "grey"
+            ]
+          },
+          "availability": "in_stock",
+          "price_inr": 39999,
+          "image_url": "https://rukmini1.flixcart.com/image/416/416/xif0q/mobile/g/d/g/-resized-original-imahfw4ahckefvxe.jpeg?q=70"
+        }
+      },
+      {
+        "platform": "croma",
+        "status": "not_listed",
+        "reason": "Croma sells the Galaxy S24, S24+, S24 Ultra and S23 FE, but not the Galaxy S24 FE."
+      }
+    ]
+  },
+  {
+    "source": {
+      "platform": "amazon",
+      "listing_id": "B0CS69QQTG",
+      "url": "https://www.amazon.in/dp/B0CS69QQTG",
+      "title": "Samsung Galaxy S24 5G AI Smartphone (Onyx Black, 8GB, 256GB Storage)",
+      "fingerprint": {
+        "category": "smartphone",
+        "brand": "samsung",
+        "model": "galaxy s24",
+        "ram_gb": 8,
+        "storage_gb": 256,
+        "colour": "Onyx Black",
+        "colour_families": [
+          "black"
+        ]
+      },
+      "availability": "in_stock",
+      "price_inr": 60849,
+      "image_url": "https://m.media-amazon.com/images/I/714DutH6IBL._SL1500_.jpg"
+    },
+    "results": [
+      {
+        "platform": "flipkart",
+        "status": "out_of_stock",
+        "reason": "Same model (Galaxy S24) with 8 GB RAM and 256 GB storage, but it is sold out.",
+        "confidence": 0.9,
+        "listing": {
+          "platform": "flipkart",
+          "listing_id": "MOBGX2F3ZUBMWBGP",
+          "url": "https://www.flipkart.com/samsung-galaxy-s24-exynos-5g-onyx-black-256-gb/p/itm4e61988c77af8?pid=MOBGX2F3ZUBMWBGP",
+          "title": "Samsung Galaxy S24 Exynos 5G (Onyx Black, 256 GB)",
+          "fingerprint": {
+            "category": "smartphone",
+            "brand": "samsung",
+            "model": "galaxy s24",
+            "ram_gb": 8,
+            "storage_gb": 256,
+            "colour": "Onyx Black",
+            "colour_families": [
+              "black"
+            ]
+          },
+          "availability": "out_of_stock",
+          "price_inr": 55999,
+          "image_url": "https://rukmini1.flixcart.com/image/416/416/xif0q/mobile/5/y/e/-resized-original-imahfvuaueggyzxd.jpeg?q=70"
+        }
+      },
+      {
+        "platform": "croma",
+        "status": "out_of_stock",
+        "reason": "Same model (Galaxy S24) with 8 GB RAM and 256 GB storage, but it can't be delivered right now.",
+        "confidence": 0.93,
+        "notes": [
+          "Croma's stock depends on location; checked for pincode 400001 (Mumbai)."
+        ],
+        "listing": {
+          "platform": "croma",
+          "listing_id": "303849",
+          "url": "https://www.croma.com/samsung-galaxy-s24-5g-8gb-ram-256gb-onyx-black-/p/303849",
+          "title": "SAMSUNG Galaxy S24 5G (8GB RAM, 256GB, Onyx Black)",
+          "fingerprint": {
+            "category": "smartphone",
+            "brand": "samsung",
+            "model": "galaxy s24",
+            "model_number": "SM-S921BZKCINS",
+            "ram_gb": 8,
+            "storage_gb": 256,
+            "colour": "Onyx Black",
+            "colour_families": [
+              "black"
+            ]
+          },
+          "availability": "out_of_stock",
+          "price_inr": 49994,
+          "image_url": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303849_evezut.png"
+        }
+      }
+    ]
+  },
+  {
+    "source": {
+      "platform": "amazon",
+      "listing_id": "B0GTZ9TSDJ",
+      "url": "https://www.amazon.in/dp/B0GTZ9TSDJ",
+      "title": "LG 108 cms (43 inches) NU87 AI Series Nano 4K Ultra HD (3840 x 2160) Smart webOS LED TV 43NU870BPLA 2026",
+      "fingerprint": {
+        "category": "television",
+        "brand": "lg",
+        "model": "nu87",
+        "model_number": "43NU870BPLA",
+        "screen_in": 43,
+        "colour": "Black",
+        "colour_families": [
+          "black"
+        ]
+      },
+      "availability": "in_stock",
+      "price_inr": 31990,
+      "image_url": "https://m.media-amazon.com/images/I/81pUEPL2Z-L._SL1500_.jpg"
+    },
+    "results": [
+      {
+        "platform": "flipkart",
+        "status": "in_stock",
+        "reason": "Same model number (43NU870BPLA) and screen size (43 inches).",
+        "confidence": 0.98,
+        "listing": {
+          "platform": "flipkart",
+          "listing_id": "TVSHMYS2GZCZEZH4",
+          "url": "https://www.flipkart.com/lg-108-cm-43-inch-ultra-hd-4k-led-smart-webos-tv-2026-nano-detail-enhancer-hdr10-pro-4k-super-upscaling-alpha7-ai-processor-gen9-dolby-atmos-sound-pro-9-1-2-ch-multi-google-gemini-ms-copilot-linear-flow-design-60hz-vrr-5-years-os-upgrade-secured-shield-channels/p/itm3ff016445103c?pid=TVSHMYS2GZCZEZH4",
+          "title": "LG 108 cm (43 inch) Ultra HD (4K) LED Smart WebOS TV 2026 Edition with NANO Detail Enhancer, HDR10 Pro, 4K Super Upscaling Alpha7 AI Processor 4K Gen9, Dolby Atmos, AI Sound Pro (9.1.2 ch), Multi AI (Google Gemini & MS Copilot), Linear Flow Design, 60Hz VRR, 5 Years OS upgrade, Secured by LG Shield, LG Channels",
+          "fingerprint": {
+            "category": "television",
+            "brand": "lg",
+            "model_number": "43NU870BPLA",
+            "screen_in": 43,
+            "colour": "Black",
+            "colour_families": [
+              "black"
+            ]
+          },
+          "availability": "in_stock",
+          "price_inr": 30409,
+          "image_url": "https://rukmini1.flixcart.com/image/416/416/xif0q/television/h/4/a/-resized-original-imahpx29axejerah.jpeg?q=70"
+        }
+      },
+      {
+        "platform": "croma",
+        "status": "in_stock",
+        "reason": "Same model number (43NU870BPLA) and screen size (43 inches).",
+        "confidence": 0.98,
+        "notes": [
+          "Croma's stock depends on location; checked for pincode 400001 (Mumbai)."
+        ],
+        "listing": {
+          "platform": "croma",
+          "listing_id": "323496",
+          "url": "https://www.croma.com/lg-nu870b-109-22-cm-43-inch-2-star-nano-cell-4k-ultra-hd-smart-webos-tv-with-intelligent-voice-recognition-2026-model-/p/323496",
+          "title": "LG NU870B 109.22 cm (43 inch) 2 Star Nano Cell 4K Ultra HD Smart WebOS TV with Intelligent Voice Recognition (2026 model)",
+          "fingerprint": {
+            "category": "television",
+            "brand": "lg",
+            "model": "nu870b",
+            "model_number": "43NU870BPLA",
+            "screen_in": 43,
+            "colour": "Black",
+            "colour_families": [
+              "black"
+            ]
+          },
+          "availability": "in_stock",
+          "price_inr": 38990,
+          "image_url": "https://media.tatacroma.com/Croma%20Assets/Entertainment/Television/Images/323496_0_uA3KTnxmJ.png?updatedAt=1789643926810"
+        }
+      }
+    ]
+  },
+  {
+    "source": {
+      "platform": "amazon",
+      "listing_id": "B0983NTYZ5",
+      "url": "https://www.amazon.in/dp/B0983NTYZ5",
+      "title": "Nike Mens Court Vision Lo NN Sneakers",
+      "fingerprint": {
+        "category": "sneaker",
+        "brand": "nike",
+        "model": "court vision low nn",
+        "model_number": "DH2987-100",
+        "colour": "White",
+        "colour_families": [
+          "white"
+        ],
+        "gender": "men"
+      },
+      "availability": "in_stock",
+      "price_inr": 3496,
+      "image_url": "https://m.media-amazon.com/images/I/51yw0T1XtTL._AC_SL1500_.jpg"
+    },
+    "results": [
+      {
+        "platform": "flipkart",
+        "status": "in_stock",
+        "reason": "Same model (Court Vision Lo NN, men's) in white.",
+        "confidence": 0.88,
+        "listing": {
+          "platform": "flipkart",
+          "listing_id": "SHOGRVJPSM9MFYYE",
+          "url": "https://www.flipkart.com/nike-court-vision-lo-nn-sneakers-men/p/itmde6fa6fc67661?pid=SHOGRVJPSM9MFYYE",
+          "title": "NIKE COURT VISION LO NN Sneakers For Men",
+          "fingerprint": {
+            "category": "sneaker",
+            "brand": "nike",
+            "model": "court vision low nn",
+            "colour": "White/White-White",
+            "colour_families": [
+              "white"
+            ],
+            "gender": "men"
+          },
+          "availability": "in_stock",
+          "price_inr": 3497,
+          "image_url": "https://rukmini1.flixcart.com/image/416/416/xif0q/shoe/u/b/u/-original-imahq9byrgphmu7n.jpeg?q=70"
+        }
+      },
+      {
+        "platform": "myntra",
+        "status": "not_listed",
+        "reason": "Myntra sells the men's Court Vision Low, but not the Next Nature (NN) version."
+      }
+    ]
+  },
+  {
+    "source": {
+      "platform": "amazon",
+      "listing_id": "B0DDTHBCJP",
+      "url": "https://www.amazon.in/dp/B0DDTHBCJP",
+      "title": "Puma Men's Solid Slim Fit Cotton Essential Polo T-Shirt for Regular wear",
+      "fingerprint": {
+        "category": "tshirt",
+        "brand": "puma",
+        "model": "essential polo",
+        "model_number": "687093",
+        "colour": "Black",
+        "colour_families": [
+          "black"
+        ],
+        "gender": "men"
+      },
+      "availability": "in_stock",
+      "price_inr": 759,
+      "image_url": "https://m.media-amazon.com/images/I/51PVi4F0IzL._SL1200_.jpg"
+    },
+    "results": [
+      {
+        "platform": "flipkart",
+        "status": "in_stock",
+        "reason": "Style code 68709301 matches Amazon's 687093, in black.",
+        "confidence": 0.95,
+        "listing": {
+          "platform": "flipkart",
+          "listing_id": "TSHH4D2FPT6NEYZZ",
+          "url": "https://www.flipkart.com/puma-solid-men-polo-neck-black-t-shirt/p/itm8ac888d7eafa2?pid=TSHH4D2FPT6NEYZZ",
+          "title": "PUMA Solid Men Polo Neck Black T-Shirt",
+          "fingerprint": {
+            "category": "tshirt",
+            "brand": "puma",
+            "model_number": "68709301",
+            "colour": "Black",
+            "colour_families": [
+              "black"
+            ],
+            "gender": "men"
+          },
+          "availability": "in_stock",
+          "price_inr": 469,
+          "image_url": "https://rukmini1.flixcart.com/image/416/416/xif0q/t-shirt/t/n/f/-resized-original-imahheebcrunwgkh.jpeg?q=70"
+        }
+      },
+      {
+        "platform": "myntra",
+        "status": "error",
+        "reason": "Myntra didn't respond in time, so it couldn't be checked. Try again."
+      }
+    ]
+  }
+]

@@ -1,0 +1,378 @@
+{
+ "products": [
+  {
+   "code": "303853",
+   "name": "SAMSUNG Galaxy S24 5G (8GB RAM, 256GB, Amber Yellow)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹49,994",
+    "priceType": "BUY",
+    "value": 49994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s24-5g-8gb-ram-256gb-amber-yellow-/p/303853",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303853_0_xrcscr.png",
+   "quickViewDesc": "<ul><li>Display: 6.2 inches (15.64 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 256GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca-Core, 3.2 GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4000 mAh with Fast Charging</li><li>USP: IP68 Water Resistant, Circle to Search, Lock Screen & Always On Display</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303847",
+   "name": "SAMSUNG Galaxy S24 Plus 5G (12GB RAM, 512GB, Onyx Black)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹54,994",
+    "priceType": "BUY",
+    "value": 54994.0
+   },
+   "mrp": {
+    "formattedValue": "₹1,09,999",
+    "priceType": "FROM",
+    "value": 109999.0
+   },
+   "url": "/samsung-galaxy-s24-plus-5g-12gb-ram-512gb-onyx-black-/p/303847",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303847_fq17gl.png",
+   "quickViewDesc": "<ul><li>Display: 6.7 inches (16.91 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 12GB RAM, 512GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca-Core, 3.2 GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4900 mAh with Fast Charging</li><li>USP: Circle to Search, One UI, Chat Assist</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303862",
+   "name": "SAMSUNG Galaxy S24 Plus 5G (12GB RAM, 256GB, Cobalt Violet)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹49,994",
+    "priceType": "BUY",
+    "value": 49994.0
+   },
+   "mrp": {
+    "formattedValue": "₹99,999",
+    "priceType": "FROM",
+    "value": 99999.0
+   },
+   "url": "/samsung-galaxy-s24-plus-5g-12gb-ram-256gb-cobalt-violet-/p/303862",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303862_albfdi.png",
+   "quickViewDesc": "<ul><li>Display: 6.7 inches (16.91 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 12GB RAM, 256GB ROM</li><li>Processor: Samsung Exynos 2400, Deca-Core, 3.2GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4900 mAh</li><li>USP: IP68 Water & Dust Resistant, Corning Gorilla Glass Victus 2, Circle It Find It</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303839",
+   "name": "SAMSUNG Galaxy S24 5G (8GB RAM, 256GB, Marble Gray)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹49,994",
+    "priceType": "BUY",
+    "value": 49994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s24-5g-8gb-ram-256gb-marble-gray-/p/303839",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303839_rrhtai.png",
+   "quickViewDesc": "<ul><li>Display: 6.2 inches (15.64 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 256GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca-Core, 3.2 GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4000 mAh with Fast Charging</li><li>USP: IP68 Water Resistant, Circle to Search, Lock Screen & Always On Display</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303849",
+   "name": "SAMSUNG Galaxy S24 5G (8GB RAM, 256GB, Onyx Black)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹49,994",
+    "priceType": "BUY",
+    "value": 49994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s24-5g-8gb-ram-256gb-onyx-black-/p/303849",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303849_evezut.png",
+   "quickViewDesc": "<ul><li>Display: 6.2 inches (15.64 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 256GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca-Core, 3.2 GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4000 mAh with Fast Charging</li><li>USP: IP68 Water Resistant, Circle to Search, Lock Screen & Always On Display</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303851",
+   "name": "SAMSUNG Galaxy S24 5G (8GB RAM, 256GB, Cobalt Violet)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹49,994",
+    "priceType": "BUY",
+    "value": 49994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s24-5g-8gb-ram-256gb-cobalt-violet-/p/303851",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303851_qewrkn.png",
+   "quickViewDesc": "<ul><li>Display: 6.2 inches (15.64 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 256GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca-Core, 3.2 GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4000 mAh with Fast Charging</li><li>USP: IP68 Water Resistant, Circle to Search, Lock Screen & Always On Display</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303838",
+   "name": "SAMSUNG Galaxy S24 Ultra 5G (12GB RAM, 256GB, Titanium Gray)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹59,994",
+    "priceType": "BUY",
+    "value": 59994.0
+   },
+   "mrp": {
+    "formattedValue": "₹1,34,999",
+    "priceType": "FROM",
+    "value": 134999.0
+   },
+   "url": "/samsung-galaxy-s24-ultra-5g-12gb-ram-256gb-titanium-gray-/p/303838",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303838_oqpio4.png",
+   "quickViewDesc": "<ul><li>Display: 6.8 inches (17.25 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 12GB RAM, 256GB ROM</li><li>Processor: Qualcomm Snapdragon 8 Gen 3, Octa-Core, 3.2 GHz</li><li>Camera: 200 MP + 50 MP + 12 MP + 10 MP Quad Rear & 12 MP Front Camera</li><li>Battery: 5000 mAh with USB Type-C Charging</li><li>USP: Circle to Search, Live Translate, Note Assist, Photo Assist, IP68 Water Resistant, Corning Gorilla Armor Protection</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303819",
+   "name": "SAMSUNG Galaxy S24 Ultra 5G (12GB RAM, 512GB, Titanium Gray)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹69,994",
+    "priceType": "BUY",
+    "value": 69994.0
+   },
+   "mrp": {
+    "formattedValue": "₹1,44,999",
+    "priceType": "FROM",
+    "value": 144999.0
+   },
+   "url": "/samsung-galaxy-s24-ultra-5g-12gb-ram-512gb-titanium-gray-/p/303819",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303819_evgjjv.png",
+   "quickViewDesc": "<ul><li>Display: 6.8 inches (17.25 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 12GB RAM, 512GB ROM</li><li>Processor: Qualcomm Snapdragon 8 Gen 3, Octa-Core, 3.2 GHz</li><li>Camera: 200 MP + 50 MP + 12 MP + 10 MP Quad Rear & 12 MP Front Camera</li><li>Battery: 5000 mAh with USB Type-C Charging</li><li>USP: Circle to Search, Live Translate, Note Assist, Photo Assist, IP68 Water Resistant, Corning Gorilla Armor Protection</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303834",
+   "name": "SAMSUNG Galaxy S24 Ultra 5G (12GB RAM, 256GB, Titanium Yellow)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹59,994",
+    "priceType": "BUY",
+    "value": 59994.0
+   },
+   "mrp": {
+    "formattedValue": "₹1,34,999",
+    "priceType": "FROM",
+    "value": 134999.0
+   },
+   "url": "/samsung-galaxy-s24-ultra-5g-12gb-ram-256gb-titanium-yellow-/p/303834",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303834_ate9jl.png",
+   "quickViewDesc": "<ul><li>Display: 6.8 inches (17.25 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 12GB RAM, 256GB ROM</li><li>Processor: Qualcomm Snapdragon 8 Gen 3, Octa-Core, 3.2 GHz</li><li>Camera: 200 MP + 50 MP + 12 MP + 10 MP Quad Rear & 12 MP Front Camera</li><li>Battery: 5000 mAh with USB Type-C Charging</li><li>USP: Circle to Search, Live Translate, Note Assist, Photo Assist, IP68 Water Resistant, Corning Gorilla Armor Protection</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "303832",
+   "name": "SAMSUNG Galaxy S24 5G (8GB RAM, 128GB, Cobalt Violet)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹44,994",
+    "priceType": "BUY",
+    "value": 44994.0
+   },
+   "mrp": {
+    "formattedValue": "₹74,999",
+    "priceType": "FROM",
+    "value": 74999.0
+   },
+   "url": "/samsung-galaxy-s24-5g-8gb-ram-128gb-cobalt-violet-/p/303832",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/303832_bqabtp.png",
+   "quickViewDesc": "<ul><li>Display: 6.2 inches (15.64 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 128GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca-Core, 3.2 GHz</li><li>Camera: 50 MP + 10 MP + 12 MP Triple Rear & 12 MP Front Camera</li><li>Battery: 4000 mAh with Fast Charging</li><li>USP: IP68 Water Resistant, Circle to Search, Lock Screen & Always On Display</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "301896",
+   "name": "SAMSUNG Galaxy S23 FE 5G (8GB RAM, 256GB, Purple)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹25,994",
+    "priceType": "BUY",
+    "value": 25994.0
+   },
+   "mrp": {
+    "formattedValue": "₹84,999",
+    "priceType": "FROM",
+    "value": 84999.0
+   },
+   "url": "/samsung-galaxy-s23-fe-5g-8gb-ram-256gb-purple-/p/301896",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/301896_0_hbblkp.png",
+   "quickViewDesc": "<ul><li>Display: 6.4 inches (16.31 cm), Dynamic AMOLED 2X  Display, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 256GB ROM</li><li>Processor: Samsung Exynos 2200, Octa Core, 2.8GHz</li><li>Camera: 50 MP+ 12 MP + 8 MP Triple Rear & 10MP Front Camera</li><li>Battery: 4500 mAh with 25W Fast Charging</li><li>USP: IP68 Dust & Water Resistant, Fingerprint Sensor</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "301866",
+   "name": "SAMSUNG Galaxy S23 FE 5G (8GB RAM, 128GB, Mint)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹22,994",
+    "priceType": "BUY",
+    "value": 22994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s23-fe-5g-8gb-ram-128gb-mint-/p/301866",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/301866_0_touy06.png",
+   "quickViewDesc": "<ul><li>Display: 6.4 inches (16.31 cm), Dynamic AMOLED 2X  Display, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 128GB ROM</li><li>Processor: Samsung Exynos 2200, Octa Core, 2.8GHz</li><li>Camera: 50 MP+ 12 MP + 8 MP Triple Rear & 10MP Front Camera</li><li>Battery: 4500 mAh with 25W Fast Charging</li><li>USP: IP68 Dust & Water Resistant, Fingerprint Sensor</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "301868",
+   "name": "SAMSUNG Galaxy S23 FE 5G (8GB RAM, 128GB, Graphite)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹22,994",
+    "priceType": "BUY",
+    "value": 22994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s23-fe-5g-8gb-ram-128gb-graphite-/p/301868",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/301868_0_olamlc.png",
+   "quickViewDesc": "<ul><li>Display: 6.4 inches (16.31 cm), Dynamic AMOLED 2X Display, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 128GB ROM</li><li>Processor: Samsung Exynos 2200, Octa-Core, 2.8GHz</li><li>Camera: 50 MP + 12 MP + 8 MP Triple Rear & 10 MP Front Camera</li><li>Battery: 4500 mAh with Fast Charging</li><li>USP: Fingerprint Sensor, Android 13 OS</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "301869",
+   "name": "SAMSUNG Galaxy S23 FE 5G (8GB RAM, 128GB, Purple)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹22,994",
+    "priceType": "BUY",
+    "value": 22994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s23-fe-5g-8gb-ram-128gb-purple-/p/301869",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/301869_0_q6rkwg.png",
+   "quickViewDesc": "<ul><li>Display: 6.4 inches (16.31 cm), Dynamic AMOLED 2X Display, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 128GB ROM</li><li>Processor: Samsung Exynos 2200, Octa-Core, 2.8GHz</li><li>Camera: 50 MP + 12 MP + 8 MP Triple Rear & 10 MP Front Camera</li><li>Battery: 4500 mAh with Fast Charging</li><li>USP: Fingerprint Sensor, Android 13 OS</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "305147",
+   "name": "SAMSUNG Galaxy S23 FE 5G (8GB RAM, 128GB, Tangerine)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹22,994",
+    "priceType": "BUY",
+    "value": 22994.0
+   },
+   "mrp": {
+    "formattedValue": "₹79,999",
+    "priceType": "FROM",
+    "value": 79999.0
+   },
+   "url": "/samsung-galaxy-s23-fe-5g-8gb-ram-128gb-tangerine-/p/305147",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/305147_0_phra4o.png",
+   "quickViewDesc": "<ul><li>Display: 6.4 inches (16.31 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 128GB ROM</li><li>Processor: SAMSUNG Exynos 2200, Octa Core, 2.8 GHz</li><li>Camera: 12 MP + 50 MP + 8 MP Triple Rear & 10 MP Front Camera</li><li>Battery: 4500 mAh with 25W Fast Charging </li><li>USP: IP68 Dust & Water Resistant, Corning Gorilla Glass 5, Vivid Colors & Reduced Noise</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "95"
+  },
+  {
+   "code": "316845",
+   "name": "SAMSUNG Galaxy Z Flip7 FE 5G (8GB RAM, 128GB, White)",
+   "manufacturer": "Samsung",
+   "price": {
+    "formattedValue": "₹89,999",
+    "priceType": "BUY",
+    "value": 89999.0
+   },
+   "mrp": {
+    "formattedValue": "₹89,999",
+    "priceType": "FROM",
+    "value": 89999.0
+   },
+   "url": "/samsung-galaxy-z-flip7-fe-5g-8gb-ram-128gb-white-/p/316845",
+   "plpImage": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/316845_0_ofee0w.png",
+   "quickViewDesc": "<ul><li>Display: 6.70 inches (17.03 cm), Dynamic AMOLED 2X, 120 Hz Refresh Rate</li><li>Memory: 8GB RAM, 128GB ROM</li><li>Processor: SAMSUNG Exynos 2400, Deca Core, 3.2 GHz</li><li>Camera: 50 MP + 12 MP Dual Rear & 10 MP Front Camera</li><li>Battery: 4000 mAh</li><li>Google Gemini, Galaxy AI, Circle to Search</li></ul>",
+   "plmStatus": "ZD",
+   "categoryL0": "1",
+   "categoryL1": "10",
+   "categoryL2": "199"
+  }
+ ],
+ "pagination": {
+  "currentPage": 0,
+  "pageSize": 21,
+  "totalPages": 1,
+  "totalResults": 16
+ },
+ "facets": [
+  {
+   "code": "lower_categories",
+   "name": "Categories",
+   "values": [
+    {
+     "code": "95",
+     "name": "Android Phones"
+    },
+    {
+     "code": "199",
+     "name": "Flip and Fold Mobile Phones"
+    }
+   ]
+  }
+ ]
+}

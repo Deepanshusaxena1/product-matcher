@@ -1,0 +1,26 @@
+{
+ "promise": {
+  "suggestedOption": {
+   "option": {
+    "promiseLines": {
+     "promiseLine": []
+    }
+   },
+   "unavailableLines": {
+    "unavailableLine": [
+     {
+      "itemID": "303849",
+      "lineId": "1",
+      "unavailableReason": "NOT_ENOUGH_PRODUCT_CHOICES"
+     },
+     {
+      "itemID": "303849",
+      "lineId": "3",
+      "unavailableReason": "NOT_ENOUGH_PRODUCT_CHOICES"
+     }
+    ]
+   }
+  },
+  "options": {}
+ }
+}

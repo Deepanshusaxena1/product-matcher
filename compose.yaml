@@ -1,0 +1,11 @@
+# `docker compose up --build` builds the image and serves the app at http://localhost:8000.
+# Settings are MATCHER_* environment variables (see app/config.py), e.g. MATCHER_CROMA_PINCODE.
+services:
+  matcher:
+    build: .
+    image: product-matcher
+    ports:
+      - "8000:8000"
+    environment:
+      MATCHER_CROMA_PINCODE: "400001"
+    restart: unless-stopped

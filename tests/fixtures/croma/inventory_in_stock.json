@@ -1,0 +1,47 @@
+{
+ "promise": {
+  "suggestedOption": {
+   "option": {
+    "promiseLines": {
+     "promiseLine": [
+      {
+       "lineId": "1",
+       "itemID": "323496",
+       "requiredQty": "1",
+       "carrierServiceCode": "CromaTransportService - 1 Day Freight",
+       "scac": "CromaTransportService",
+       "fulfillmentType": "HDEL",
+       "assignments": {
+        "totalNumberOfRecords": "1",
+        "assignment": [
+         {
+          "quantity": "1",
+          "shipNode": "D056",
+          "deliveryDate": "2026-10-18T22:37:39.402+05:30",
+          "productAvailDate": "2026-10-17T19:37:39.402",
+          "podIndicator": "N",
+          "isTradeinIndicator": "N"
+         }
+        ]
+       },
+       "extn": {
+        "preOrderItem": "",
+        "widerStoreFlag": ""
+       }
+      }
+     ]
+    }
+   },
+   "unavailableLines": {
+    "unavailableLine": [
+     {
+      "itemID": "323496",
+      "lineId": "3",
+      "unavailableReason": "SOURCING_RULE_NOT_DEFINED"
+     }
+    ]
+   }
+  },
+  "options": {}
+ }
+}
