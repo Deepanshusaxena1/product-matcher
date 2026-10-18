@@ -67,7 +67,11 @@ uv run mypy
 
 ## Deploy
 
-The full guide, including free hosts and troubleshooting, is [deployment_documentation.md](deployment_documentation.md).
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Deepanshusaxena1/product-matcher/tree/main)
+
+The button deploys to DigitalOcean App Platform in Bangalore, as described by `.do/deploy.template.yaml`. The
+full guide, covering Docker, App Platform and a DigitalOcean Droplet, is
+[deployment_documentation.md](deployment_documentation.md).
 
 The `Dockerfile` builds one image that serves the API and the page on `$PORT` (default 8000):
 
