@@ -63,6 +63,11 @@ def build_live_comparer(
         ],
         finder=CachedFinder(Matcher(), results, ttl_seconds=settings.result_cache_ttl_s),
         platform_timeout_s=settings.platform_timeout_s,
+        platform_timeouts=(
+            dict.fromkeys(settings.proxied_shops, settings.proxied_platform_timeout_s)
+            if proxied_fetcher is not None
+            else None
+        ),
     )
 
 
@@ -74,6 +79,7 @@ def _proxied_fetcher(settings: Settings) -> CurlPageFetcher | None:
         proxy=settings.proxy_url.get_secret_value(),
         verify=settings.proxy_ca_path or False,
         timeout_s=settings.proxy_timeout_s,
+        max_per_host=settings.proxy_max_per_host,
     )
 
 

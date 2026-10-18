@@ -1,4 +1,6 @@
+import asyncio
 from pathlib import Path
+from typing import Any
 
 import pytest
 
@@ -13,10 +15,10 @@ PHONE_URL = "https://www.amazon.in/dp/B0DHL7YT5S"
 POLO_URL = "https://www.amazon.in/dp/B0DDTHBCJP"
 
 
-def _amazon(url: str, fixture: str) -> FakeFetcher:
+def _amazon(url: str, fixture: str, fetcher: type[FakeFetcher] = FakeFetcher) -> FakeFetcher:
     """A fetcher that knows only this Amazon page, so every shop it is asked for fails."""
     html = (AMAZON / fixture).read_text(encoding="utf-8")
-    return FakeFetcher({url: FetchedPage(status_code=200, url=url, text=html)})
+    return fetcher({url: FetchedPage(status_code=200, url=url, text=html)})
 
 
 def _hosts(fetcher: FakeFetcher) -> set[str]:
@@ -54,6 +56,28 @@ async def test_without_a_proxy_every_shop_goes_direct() -> None:
 
     assert {result.platform for result in report.results} == {Platform.FLIPKART, Platform.CROMA}
     assert "www.flipkart.com" in _hosts(direct)
+
+
+class SlowFetcher(FakeFetcher):
+    async def get(self, url: str, **options: Any) -> FetchedPage:
+        await asyncio.sleep(0.2)
+        return await super().get(url, **options)
+
+    async def post_json(self, url: str, payload: Any, **options: Any) -> FetchedPage:
+        await asyncio.sleep(0.2)
+        return await super().post_json(url, payload, **options)
+
+
+async def test_the_proxied_shops_get_their_own_time_limit() -> None:
+    # Every shop request is slower than the default limit; only the proxied Flipkart has time to answer.
+    direct = _amazon(PHONE_URL, "phone_samsung_s24fe.html", SlowFetcher)
+    settings = Settings(platform_timeout_s=0.05, proxied_platform_timeout_s=5.0)
+
+    report = await build_live_comparer(direct, settings, proxied_fetcher=SlowFetcher({})).compare(PHONE_URL)
+
+    flipkart, croma = report.results
+    assert "Couldn't check Flipkart" in flipkart.reason  # it failed, but it wasn't cut short
+    assert "took too long" in croma.reason
 
 
 def test_the_proxied_shops_are_read_from_a_comma_separated_list(monkeypatch: pytest.MonkeyPatch) -> None:

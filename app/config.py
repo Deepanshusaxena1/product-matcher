@@ -32,6 +32,9 @@ class Settings(BaseSettings):
         default=None, validation_alias=AliasChoices("MATCHER_PROXY_CA_PATH", "MATCHER_FLIPKART_PROXY_CA_PATH")
     )
     proxy_timeout_s: float = 30.0  # such proxies retry for us, so one request can take longer
+    # A shop behind the proxy needs a search and up to a dozen product pages, each several seconds slower.
+    proxied_platform_timeout_s: float = 90.0
+    proxy_max_per_host: int = Field(default=4, ge=1)  # a shop's batch of product pages, fetched at once
     proxied_shops: Annotated[tuple[Platform, ...], NoDecode] = (Platform.FLIPKART, Platform.MYNTRA)
 
     @field_validator("proxied_shops", mode="before")

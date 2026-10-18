@@ -49,6 +49,8 @@ with `-e`, or add them under `environment:` in a compose file. On Render, add th
 | `MATCHER_PROXY_TIMEOUT_S` | `30` | Time limit for one request through the proxy, in seconds (the proxy retries for us, so it can be slow) |
 | `MATCHER_FETCH_TIMEOUT_S` | `15` | Time limit for one direct request to a shop, in seconds |
 | `MATCHER_PLATFORM_TIMEOUT_S` | `45` | Time limit for everything done for one shop, in seconds |
+| `MATCHER_PROXIED_PLATFORM_TIMEOUT_S` | `90` | The same limit for a shop that goes through the proxy, in seconds. It needs a search and up to a dozen product pages, each slower through the proxy |
+| `MATCHER_PROXY_MAX_PER_HOST` | `4` | How many of one shop's pages are fetched through the proxy at once. Keep it within your proxy plan's concurrency limit |
 | `MATCHER_PRODUCT_CACHE_TTL_S` | `86400` (24 h) | How long an Amazon product is remembered |
 | `MATCHER_RESULT_CACHE_TTL_S` | `1800` (30 min) | How long a shop's answer is reused; "Couldn't check" is never cached |
 | `MATCHER_CACHE_MAX_ENTRIES` | `1000` | Size of each in-memory cache |
@@ -214,6 +216,7 @@ The service's **Logs** tab names the reason for every "Couldn't check": search i
 | Flipkart says "Couldn't check" with `HTTP 429`, or Myntra with "returned a page without results" | No proxy is set, so the shop sees a server outside India | Set `MATCHER_PROXY_URL` ([section 5](#5-set-up-the-proxy)) |
 | The log shows `CONNECT tunnel failed, response 407` | Bright Data rejected the proxy's user name or password | Rebuild the address from the zone's access details ([5.2](#52-build-the-proxy-address)) |
 | The log shows `over proxy` with `Could not connect` or a timeout | Wrong proxy host or port, or the zone is disabled | Check the zone in Bright Data and the host and port in the address |
+| Flipkart or Myntra says "took too long to answer" | The proxy is slow today, and the shop's search and product pages didn't fit in 90 seconds | Retry, or raise `MATCHER_PROXIED_PLATFORM_TIMEOUT_S` |
 | The log shows a certificate error for flipkart.com or myntra.com | `MATCHER_PROXY_CA_PATH` points at a missing or wrong file | Re-add the secret file ([5.3](#53-optional-verify-the-proxys-certificate)), or remove the setting |
 | Flipkart works, then stops working at the start of a month or after a burst of searches | The free tier's 5,000 requests are used up, or the spending limit was hit | Check the zone's statistics and billing in Bright Data |
 | Croma or Amazon says "Couldn't check" | That shop is refusing or throttling Render's address | Wait a few minutes and retry; Amazon throttles bursts of searches |

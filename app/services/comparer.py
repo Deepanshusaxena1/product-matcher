@@ -11,7 +11,7 @@ from app.domain.models import MatchStatus, Platform, PlatformChecked, PlatformRe
 from app.services.report import collect_report
 
 if TYPE_CHECKING:
-    from collections.abc import AsyncGenerator, Callable, Iterable
+    from collections.abc import AsyncGenerator, Callable, Iterable, Mapping
 
     from app.domain.models import ComparisonEvent, ComparisonReport, Listing
     from app.domain.ports import PlatformAdapter, ProductSource
@@ -36,12 +36,14 @@ class LiveProductComparer:
         finder: PlatformFinder,
         *,
         platform_timeout_s: float = 45.0,
+        platform_timeouts: Mapping[Platform, float] | None = None,
         clock: Callable[[], datetime] = lambda: datetime.now(UTC),
     ) -> None:
         self._source = source
         self._adapters = {adapter.platform: adapter for adapter in adapters}
         self._finder = finder
         self._platform_timeout_s = platform_timeout_s
+        self._platform_timeouts = dict(platform_timeouts or {})  # shops that get longer than the default
         self._clock = clock
 
     @property
@@ -78,7 +80,7 @@ class LiveProductComparer:
         if adapter is None:
             return _could_not_check(platform, f"{platform.label} isn't connected yet.")
         try:
-            async with asyncio.timeout(self._platform_timeout_s):
+            async with asyncio.timeout(self._platform_timeouts.get(platform, self._platform_timeout_s)):
                 return await self._finder.find(product, adapter)
         except TimeoutError:
             logger.warning("%s timed out for %s", platform, product.listing_id)

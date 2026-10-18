@@ -85,13 +85,13 @@ def _not_listed(platform: Platform) -> PlatformResult:
 
 
 def _comparer(
-    outcomes: dict[Platform, PlatformResult | Exception | float], **options: float
+    outcomes: dict[Platform, PlatformResult | Exception | float], *, platform_timeout_s: float = 45.0
 ) -> LiveProductComparer:
     return LiveProductComparer(
         FakeSource(TV),
         adapters=[NamedAdapter(platform) for platform in outcomes],
         finder=FakeFinder(outcomes),
-        **options,
+        platform_timeout_s=platform_timeout_s,
     )
 
 
@@ -139,6 +139,24 @@ async def test_a_platform_that_takes_too_long_is_reported_as_could_not_check() -
 
     assert report.results[0].status is MatchStatus.ERROR
     assert "took too long" in report.results[0].reason
+
+
+async def test_a_platform_can_be_given_longer_than_the_others() -> None:
+    comparer = LiveProductComparer(
+        FakeSource(TV),
+        adapters=[NamedAdapter(Platform.FLIPKART), NamedAdapter(Platform.CROMA)],
+        finder=FakeFinder(
+            {Platform.FLIPKART: _not_listed(Platform.FLIPKART), Platform.CROMA: _not_listed(Platform.CROMA)},
+            delays={Platform.FLIPKART: 0.1, Platform.CROMA: 0.1},
+        ),
+        platform_timeout_s=0.05,
+        platform_timeouts={Platform.FLIPKART: 5.0},
+    )
+
+    flipkart, croma = (await comparer.compare(TV.url)).results
+
+    assert flipkart.status is MatchStatus.NOT_LISTED
+    assert "took too long" in croma.reason
 
 
 async def test_problems_with_the_amazon_link_reach_the_caller() -> None:
